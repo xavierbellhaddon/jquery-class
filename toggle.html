@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <script>
+    $("document").ready(function () {
+        $("#toggleMe").click(function () {
+            $("#textBox").toggle(4000, "swing");
+        });
+    });
+  </script>
+  <style>
+
+  </style>
+  <body>
+    <a href="#" id="toggleMe">Toggle</a>
+    <div id="textBox">
+      <p>
+        Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+        in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+        accusata concludaturque ne.  
+      </p>
+      <p>
+        Usu ei clita laboramus, mei ut discere
+        molestiae. Dolorum repudiare at duo, ex mel regione oporteat. Ut affert
+        voluptatum complectitur eam, maiorum detracto ut mei.
+      </p>
+    </div>
+  </body>
+</html>
