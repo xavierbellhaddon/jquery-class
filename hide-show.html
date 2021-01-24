@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <script>
+    $("document").ready(function () {
+      $("#show").on("click", function () {
+        $("#textBox").show();
+      });
+      $("#hide").on("click", function () {
+        $("#textBox").hide();
+      });
+    });
+  </script>
+  <style>
+    #textBox {
+      display: none;
+    }
+  </style>
+  <body>
+    <a href="#" id="show">Click to show</a> |
+    <a href="#" id="hide">Click to hide</a>
+    <div id="textBox">
+      Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+      in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+      accusata concludaturque ne. Usu ei clita laboramus, mei ut discere
+      molestiae. Dolorum repudiare at duo, ex mel regione oporteat. Ut affert
+      voluptatum complectitur eam, maiorum detracto ut mei.
+    </div>
+  </body>
+</html>
