@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <script>
+    $("document").ready(function () {
+        $("#fade-in").on("click", function () {
+            $("#textBox").fadeIn(3000, function () {
+                alert("I'm done fading in");
+            });
+        });
+        $("#fade-out").on("click", function () {
+            $("#textBox").fadeOut("fast", function () {
+                alert("I'm done fading out");
+            });
+        });
+    });
+  </script>
+  <style>
+      #textBox {
+          display: none;
+      }
+  </style>
+  <body>
+      <a href="#" id="fade-in">Fade In</a> | <a href="#" id="fade-out">Fade Out</a>
+    <div id="textBox">
+      <p>
+        Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+        in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+        accusata concludaturque ne.  
+      </p>
+      <p>
+        Usu ei clita laboramus, mei ut discere
+        molestiae. Dolorum repudiare at duo, ex mel regione oporteat. Ut affert
+        voluptatum complectitur eam, maiorum detracto ut mei.
+      </p>
+    </div>
+  </body>
+</html>
