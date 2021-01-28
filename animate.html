@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <script>
+    $("document").ready(function () {
+        $("#grow").click(function () {
+            $("#textBox").animate({width: "500px"}, 2000);
+        });
+        $("#move").click(function () {
+            $("#textBox").animate({marginLeft: "200px"}, 1000);
+        });
+        $("#bigger").click(function () {
+            $("#textBox").animate({fontSize: "500px"}, 2300);
+        });
+        $("#many").click(function () {
+            $("#textBox").animate({fontSize: "40px", marginLeft: "400px", width: "600px"}, 2000);
+        });
+    });
+  </script>
+  <style>
+      #textBox {
+          width: 200px;
+          height: 200px;
+          background-color: #ccc;
+          position: absolute;
+          margin-top: 20px;
+      }
+  </style>
+  <body>
+    <a href="#" id="grow">Grow</a> | <a href="#" id="move">Move</a> | <a href="#" id="bigger">Bigger</a> | <a href="#" id="many">Many Things</a>
+    <div id="textBox">
+      <p>
+        Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+        in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+        accusata concludaturque ne.  
+      </p>
+    </div>
+  </body>
+</html>
