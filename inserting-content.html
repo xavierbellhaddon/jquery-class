@@ -9,21 +9,18 @@
 
   <script>
     $("document").ready(function () {
-    //   $("#create_text").click(function () {
-    //       $("#container p:last").text("Replaced and created this text.")
-    //   })
-      $("#create_variable").click(function () {
-          var newText = $("#container p:first");
-          $("#container p:last").html(newText);
-      })
+        $("#append").click(function () {
+            $("p:first").append("I just appended some copy!");
+        })
+        $("#prepend").click(function () {
+            $("p:first").prepend("I just appended some copy!");
+        })
     });
   </script>
   <style></style>
   <body>
-      <a id="create" href="#">Create</a>
-      <a id="create_text" href="#">Create Text</a>
-      <a id="create_variable" href="#">Create Variable</a>
-
+      <a href="#" id="append">Append</a>
+      <a href="#" id="prepend">Prepend</a>
       <div id="container">
         <p>
             1 Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
