@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <script>
+    $("document").ready(function () {
+        $("#add-class").click(function () {
+            $("p:first").addClass('color');
+        });
+        $("#remove-class").click(function () {
+            $("p:first").removeClass('color');
+        });
+        $("#toggle-class").click(function () {
+            $("p:first").toggleClass('color');
+        });
+        $("#increase-class").click(function () {
+            $("p:first").css("font-size", "+=1px");
+        });
+        $("#decrease-class").click(function () {
+            $("p:first").css("font-size", "-=1px");
+        });
+    });
+  </script>
+  <style>
+      .color{
+          color: #00D8FF;
+      }
+  </style>
+  <body>
+      <a href="#" id="add-class">Add Class</a>
+      <a href="#" id="remove-class">Remove Class</a>
+      <a href="#" id="toggle-class">Toggle Class</a>
+      <a href="#" id="increase-class">Increase Class</a>
+      <a href="#" id="decrease-class">Decrease Class</a>
+      <div id="container">
+        <p>
+            1 Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+            in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+            accusata concludaturque ne.
+          </p>
+          <p>
+            2 Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+            in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+            accusata concludaturque ne.
+          </p>
+          <p>
+            3 Lorem ipsum dolor sit amet, quo ei nostro ocurreret, elitr atomorum his
+            in. Vel ei ornatus feugait principes, ei pro dicat dictas impedit, ius
+            accusata concludaturque ne.
+          </p>
+      </div>
+  </body>
+</html>
